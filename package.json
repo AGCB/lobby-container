@@ -1,0 +1,37 @@
+{
+  "name": "gratitude-extension",
+  "version": "1.0.0",
+  "description": "Extension to write down what your grateful for",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack && live-server public",
+    "webpack": "webpack -w",
+    "server": "nodemon server/server.js",
+    "start-dev": "nodemon server/server.js & webpack-dev-server --hot",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Skyler Escobedo",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "material-ui": "^0.20.0",
+    "path": "^0.12.7",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "nodemon": "^1.17.2",
+    "style-loader": "^0.20.3",
+    "webpack": "^3.10.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
