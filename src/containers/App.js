@@ -1,27 +1,17 @@
 import React, { Component } from 'react';
-import Paper from 'material-ui/Paper';
+import Level from '../components/level'
 
-const style = {
-  height: 100,
-  width: 100,
-  margin: 20,
-  textAlign: 'center',
-  display: 'inline-block',
-};
-
-class App extends React.Component {
-  constructor() {
-    super();
-    this.state = {};
+class App extends Component {
+  constructor(props) {
+    super(props);
   }
-  
+
   render() {
-    return (
-      <div>
-        <Paper style={style} zDepth={4} rounded={false} />
-        Hello Wrorld!
-      </div>
-    );
+   return (
+     <div>
+       <Level />
+     </div>
+   );
   }
 }
 export default App;
